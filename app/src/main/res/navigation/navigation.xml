@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.asiimwebenard.dotnews.views.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_detail"
+            app:destination="@id/detail"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@+id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/info"
+        android:name="com.asiimwebenard.dotnews.views.Info"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/international"
+        android:name="com.asiimwebenard.dotnews.views.International"
+        android:label="fragment_international"
+        tools:layout="@layout/fragment_international" >
+        <action
+            android:id="@+id/action_international_to_detail"
+            app:destination="@id/detail"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@+id/international" />
+    </fragment>
+    <fragment
+        android:id="@+id/saved"
+        android:name="com.asiimwebenard.dotnews.views.Saved"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_saved_to_savedDetails"
+            app:destination="@id/savedDetails"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@anim/fragment_fade_enter"
+            app:popExitAnim="@anim/fragment_fade_exit"
+            app:popUpTo="@+id/saved" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail"
+        android:name="com.asiimwebenard.dotnews.views.Detail"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="Article"
+            app:argType="com.asiimwebenard.dotnews.models.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedDetails"
+        android:name="com.asiimwebenard.dotnews.views.SavedDetails"
+        android:label="fragment_saved_details"
+        tools:layout="@layout/fragment_saved_details" >
+        <argument
+            android:name="StoredArticle"
+            app:argType="com.asiimwebenard.dotnews.dao.StoredArticle" />
+    </fragment>
+</navigation>

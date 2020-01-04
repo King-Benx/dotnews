@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DotNews</string>
+    <string name="home">Home</string>
+    <string name="international">International</string>
+    <string name="saved">Saved</string>
+    <string name="info">Info</string>
+    <string name="image">image</string>
+    <string name="about_dotnews">DotNews</string>
+    <string name="about_app">This is an application that delivers both local and international news.\nIt provides you with the ability to store and share news articles with your friends.\nIt consumes an News API.\nDeveloped for Semester 5 Project by \nAsiimwe Benard F17/0256</string>
+    <string name="https_newsapi_org">https://newsapi.org/</string>
+    <string name="local_news">Local News</string>
+    <string name="international_news">International News</string>
+    <string name="source">Source</string>
+    <string name="author">Author</string>
+    <string name="published">Published</string>
+    <string name="saved_articles">Saved Articles</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
